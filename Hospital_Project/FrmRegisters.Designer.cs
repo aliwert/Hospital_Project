@@ -50,6 +50,7 @@
             this.BtnPatient.Size = new System.Drawing.Size(229, 172);
             this.BtnPatient.TabIndex = 0;
             this.BtnPatient.UseVisualStyleBackColor = true;
+            this.BtnPatient.Click += new System.EventHandler(this.BtnPatient_Click);
             // 
             // BtnDoctor
             // 
@@ -61,6 +62,7 @@
             this.BtnDoctor.Size = new System.Drawing.Size(229, 172);
             this.BtnDoctor.TabIndex = 1;
             this.BtnDoctor.UseVisualStyleBackColor = true;
+            this.BtnDoctor.Click += new System.EventHandler(this.BtnDoctor_Click);
             // 
             // BtnSecretary
             // 
@@ -73,6 +75,7 @@
             this.BtnSecretary.Size = new System.Drawing.Size(229, 172);
             this.BtnSecretary.TabIndex = 2;
             this.BtnSecretary.UseVisualStyleBackColor = false;
+            this.BtnSecretary.Click += new System.EventHandler(this.BtnSecretary_Click);
             // 
             // label1
             // 
@@ -129,6 +132,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.DarkCyan;
             this.ClientSize = new System.Drawing.Size(837, 555);
             this.Controls.Add(this.label4);
@@ -140,9 +144,11 @@
             this.Controls.Add(this.BtnDoctor);
             this.Controls.Add(this.BtnPatient);
             this.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
             this.Name = "FrmRegisters";
-            this.Text = "Form1";
+            this.Text = "AliWertHospitalRegister";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
