@@ -36,6 +36,7 @@ namespace Hospital_Project
             if (dr.Read())
             {
                 FrmPatientDetail detail = new FrmPatientDetail();
+                detail.tc = MskTC.Text;
                 detail.Show();
                 this.Hide();
             }
