@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPatientDetail));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.LblNameSurname = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,6 +48,8 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.TxtId = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -106,6 +109,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.TxtId);
+            this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.LnkChangeInformation);
             this.groupBox2.Controls.Add(this.BtnAppointment);
             this.groupBox2.Controls.Add(this.label7);
@@ -124,16 +129,17 @@
             // LnkChangeInformation
             // 
             this.LnkChangeInformation.AutoSize = true;
-            this.LnkChangeInformation.Location = new System.Drawing.Point(4, 354);
+            this.LnkChangeInformation.Location = new System.Drawing.Point(14, 351);
             this.LnkChangeInformation.Name = "LnkChangeInformation";
             this.LnkChangeInformation.Size = new System.Drawing.Size(166, 23);
             this.LnkChangeInformation.TabIndex = 5;
             this.LnkChangeInformation.TabStop = true;
             this.LnkChangeInformation.Text = "Change Information";
+            this.LnkChangeInformation.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkChangeInformation_LinkClicked);
             // 
             // BtnAppointment
             // 
-            this.BtnAppointment.Location = new System.Drawing.Point(142, 318);
+            this.BtnAppointment.Location = new System.Drawing.Point(185, 341);
             this.BtnAppointment.Name = "BtnAppointment";
             this.BtnAppointment.Size = new System.Drawing.Size(173, 33);
             this.BtnAppointment.TabIndex = 3;
@@ -143,7 +149,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(4, 206);
+            this.label7.Location = new System.Drawing.Point(47, 229);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(135, 23);
             this.label7.TabIndex = 4;
@@ -152,7 +158,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(58, 114);
+            this.label6.Location = new System.Drawing.Point(101, 137);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 23);
             this.label6.TabIndex = 3;
@@ -161,14 +167,15 @@
             // CmbDoctor
             // 
             this.CmbDoctor.FormattingEnabled = true;
-            this.CmbDoctor.Location = new System.Drawing.Point(142, 106);
+            this.CmbDoctor.Location = new System.Drawing.Point(185, 129);
             this.CmbDoctor.Name = "CmbDoctor";
             this.CmbDoctor.Size = new System.Drawing.Size(173, 31);
             this.CmbDoctor.TabIndex = 2;
+            this.CmbDoctor.SelectedIndexChanged += new System.EventHandler(this.CmbDoctor_SelectedIndexChanged);
             // 
             // RchPresenting
             // 
-            this.RchPresenting.Location = new System.Drawing.Point(142, 168);
+            this.RchPresenting.Location = new System.Drawing.Point(185, 191);
             this.RchPresenting.Name = "RchPresenting";
             this.RchPresenting.Size = new System.Drawing.Size(173, 134);
             this.RchPresenting.TabIndex = 2;
@@ -177,7 +184,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(58, 52);
+            this.label5.Location = new System.Drawing.Point(101, 75);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(74, 23);
             this.label5.TabIndex = 1;
@@ -186,10 +193,11 @@
             // CmbSubject
             // 
             this.CmbSubject.FormattingEnabled = true;
-            this.CmbSubject.Location = new System.Drawing.Point(142, 44);
+            this.CmbSubject.Location = new System.Drawing.Point(185, 67);
             this.CmbSubject.Name = "CmbSubject";
             this.CmbSubject.Size = new System.Drawing.Size(173, 31);
             this.CmbSubject.TabIndex = 0;
+            this.CmbSubject.SelectedIndexChanged += new System.EventHandler(this.CmbSubject_SelectedIndexChanged);
             // 
             // groupBox3
             // 
@@ -229,6 +237,22 @@
             this.dataGridView1.Size = new System.Drawing.Size(844, 259);
             this.dataGridView1.TabIndex = 0;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(106, 27);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(25, 23);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Id";
+            // 
+            // TxtId
+            // 
+            this.TxtId.Location = new System.Drawing.Point(185, 19);
+            this.TxtId.Name = "TxtId";
+            this.TxtId.Size = new System.Drawing.Size(173, 31);
+            this.TxtId.TabIndex = 7;
+            // 
             // FrmPatientDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
@@ -240,6 +264,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmPatientDetail";
             this.Text = "PatientDetail";
@@ -277,5 +302,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.LinkLabel LnkChangeInformation;
+        private System.Windows.Forms.TextBox TxtId;
+        private System.Windows.Forms.Label label2;
     }
 }
