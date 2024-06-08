@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegisters));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.BtnPatient = new System.Windows.Forms.Button();
+            this.BtnDoctor = new System.Windows.Forms.Button();
+            this.BtnSecretary = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,39 +40,39 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // BtnPatient
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(41, 233);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(229, 172);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnPatient.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnPatient.BackgroundImage")));
+            this.BtnPatient.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnPatient.Location = new System.Drawing.Point(41, 233);
+            this.BtnPatient.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BtnPatient.Name = "BtnPatient";
+            this.BtnPatient.Size = new System.Drawing.Size(229, 172);
+            this.BtnPatient.TabIndex = 0;
+            this.BtnPatient.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // BtnDoctor
             // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(290, 233);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(229, 172);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnDoctor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnDoctor.BackgroundImage")));
+            this.BtnDoctor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnDoctor.Location = new System.Drawing.Point(290, 233);
+            this.BtnDoctor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BtnDoctor.Name = "BtnDoctor";
+            this.BtnDoctor.Size = new System.Drawing.Size(229, 172);
+            this.BtnDoctor.TabIndex = 1;
+            this.BtnDoctor.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // BtnSecretary
             // 
-            this.button3.BackColor = System.Drawing.Color.MintCream;
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(541, 233);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(229, 172);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = false;
+            this.BtnSecretary.BackColor = System.Drawing.Color.MintCream;
+            this.BtnSecretary.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnSecretary.BackgroundImage")));
+            this.BtnSecretary.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnSecretary.Location = new System.Drawing.Point(541, 233);
+            this.BtnSecretary.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BtnSecretary.Name = "BtnSecretary";
+            this.BtnSecretary.Size = new System.Drawing.Size(229, 172);
+            this.BtnSecretary.TabIndex = 2;
+            this.BtnSecretary.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -125,7 +125,7 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Ali Wert Hospital";
             // 
-            // Form1
+            // FrmRegisters
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -136,12 +136,12 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnSecretary);
+            this.Controls.Add(this.BtnDoctor);
+            this.Controls.Add(this.BtnPatient);
             this.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "Form1";
+            this.Name = "FrmRegisters";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -151,9 +151,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BtnPatient;
+        private System.Windows.Forms.Button BtnDoctor;
+        private System.Windows.Forms.Button BtnSecretary;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
