@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAnnouncements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnnouncements.Designer.cs">
+      <DependentUpon>FrmAnnouncements.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmChangeInformation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +63,12 @@
     </Compile>
     <Compile Include="FrmDoctorDetail.Designer.cs">
       <DependentUpon>FrmDoctorDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoctorInformationChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoctorInformationChange.Designer.cs">
+      <DependentUpon>FrmDoctorInformationChange.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmDoctorRegister.cs">
       <SubType>Form</SubType>
@@ -88,13 +100,25 @@
     <Compile Include="FrmPatientRegister.Designer.cs">
       <DependentUpon>FrmPatientRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmSecretaryRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSecretaryRegister.Designer.cs">
+      <DependentUpon>FrmSecretaryRegister.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAnnouncements.resx">
+      <DependentUpon>FrmAnnouncements.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmChangeInformation.resx">
       <DependentUpon>FrmChangeInformation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDoctorDetail.resx">
       <DependentUpon>FrmDoctorDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoctorInformationChange.resx">
+      <DependentUpon>FrmDoctorInformationChange.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDoctorRegister.resx">
       <DependentUpon>FrmDoctorRegister.cs</DependentUpon>
@@ -110,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPatientRegister.resx">
       <DependentUpon>FrmPatientRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSecretaryRegister.resx">
+      <DependentUpon>FrmSecretaryRegister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

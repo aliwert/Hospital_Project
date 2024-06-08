@@ -29,20 +29,19 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.LblNameSurname = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.LblTC = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.LblNameSurname = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.RchPresenting = new System.Windows.Forms.RichTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.RchPresenting = new System.Windows.Forms.RichTextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.BtnUpdate = new System.Windows.Forms.Button();
-            this.BtnAnnouncements = new System.Windows.Forms.Button();
             this.BtnQuit = new System.Windows.Forms.Button();
-            this.BtnInternet = new System.Windows.Forms.Button();
+            this.BtnAnnouncements = new System.Windows.Forms.Button();
+            this.BtnUpdate = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -62,6 +61,15 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Doctor Detail";
+            // 
+            // LblNameSurname
+            // 
+            this.LblNameSurname.AutoSize = true;
+            this.LblNameSurname.Location = new System.Drawing.Point(216, 93);
+            this.LblNameSurname.Name = "LblNameSurname";
+            this.LblNameSurname.Size = new System.Drawing.Size(76, 23);
+            this.LblNameSurname.TabIndex = 3;
+            this.LblNameSurname.Text = "Null Null";
             // 
             // label3
             // 
@@ -90,15 +98,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "T.C SSN:";
             // 
-            // LblNameSurname
-            // 
-            this.LblNameSurname.AutoSize = true;
-            this.LblNameSurname.Location = new System.Drawing.Point(216, 93);
-            this.LblNameSurname.Name = "LblNameSurname";
-            this.LblNameSurname.Size = new System.Drawing.Size(76, 23);
-            this.LblNameSurname.TabIndex = 3;
-            this.LblNameSurname.Text = "Null Null";
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.RchPresenting);
@@ -108,6 +107,14 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Appointment Detail";
+            // 
+            // RchPresenting
+            // 
+            this.RchPresenting.Location = new System.Drawing.Point(6, 39);
+            this.RchPresenting.Name = "RchPresenting";
+            this.RchPresenting.Size = new System.Drawing.Size(436, 255);
+            this.RchPresenting.TabIndex = 5;
+            this.RchPresenting.Text = "";
             // 
             // groupBox3
             // 
@@ -128,17 +135,8 @@
             this.dataGridView1.Size = new System.Drawing.Size(805, 566);
             this.dataGridView1.TabIndex = 0;
             // 
-            // RchPresenting
-            // 
-            this.RchPresenting.Location = new System.Drawing.Point(6, 39);
-            this.RchPresenting.Name = "RchPresenting";
-            this.RchPresenting.Size = new System.Drawing.Size(436, 255);
-            this.RchPresenting.TabIndex = 5;
-            this.RchPresenting.Text = "";
-            // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.BtnInternet);
             this.groupBox4.Controls.Add(this.BtnQuit);
             this.groupBox4.Controls.Add(this.BtnAnnouncements);
             this.groupBox4.Controls.Add(this.BtnUpdate);
@@ -149,14 +147,14 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Quick Access";
             // 
-            // BtnUpdate
+            // BtnQuit
             // 
-            this.BtnUpdate.Location = new System.Drawing.Point(6, 30);
-            this.BtnUpdate.Name = "BtnUpdate";
-            this.BtnUpdate.Size = new System.Drawing.Size(175, 32);
-            this.BtnUpdate.TabIndex = 7;
-            this.BtnUpdate.Text = "Change Information";
-            this.BtnUpdate.UseVisualStyleBackColor = true;
+            this.BtnQuit.Location = new System.Drawing.Point(6, 81);
+            this.BtnQuit.Name = "BtnQuit";
+            this.BtnQuit.Size = new System.Drawing.Size(395, 32);
+            this.BtnQuit.TabIndex = 9;
+            this.BtnQuit.Text = "Quit";
+            this.BtnQuit.UseVisualStyleBackColor = true;
             // 
             // BtnAnnouncements
             // 
@@ -167,23 +165,14 @@
             this.BtnAnnouncements.Text = "Announcements";
             this.BtnAnnouncements.UseVisualStyleBackColor = true;
             // 
-            // BtnQuit
+            // BtnUpdate
             // 
-            this.BtnQuit.Location = new System.Drawing.Point(6, 81);
-            this.BtnQuit.Name = "BtnQuit";
-            this.BtnQuit.Size = new System.Drawing.Size(175, 32);
-            this.BtnQuit.TabIndex = 9;
-            this.BtnQuit.Text = "Quit";
-            this.BtnQuit.UseVisualStyleBackColor = true;
-            // 
-            // BtnInternet
-            // 
-            this.BtnInternet.Location = new System.Drawing.Point(226, 81);
-            this.BtnInternet.Name = "BtnInternet";
-            this.BtnInternet.Size = new System.Drawing.Size(175, 32);
-            this.BtnInternet.TabIndex = 10;
-            this.BtnInternet.Text = "A";
-            this.BtnInternet.UseVisualStyleBackColor = true;
+            this.BtnUpdate.Location = new System.Drawing.Point(6, 30);
+            this.BtnUpdate.Name = "BtnUpdate";
+            this.BtnUpdate.Size = new System.Drawing.Size(175, 32);
+            this.BtnUpdate.TabIndex = 7;
+            this.BtnUpdate.Text = "Change Information";
+            this.BtnUpdate.UseVisualStyleBackColor = true;
             // 
             // FrmDoctorDetail
             // 
@@ -222,7 +211,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.RichTextBox RchPresenting;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button BtnInternet;
         private System.Windows.Forms.Button BtnQuit;
         private System.Windows.Forms.Button BtnAnnouncements;
         private System.Windows.Forms.Button BtnUpdate;
