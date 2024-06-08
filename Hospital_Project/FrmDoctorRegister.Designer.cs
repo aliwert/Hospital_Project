@@ -85,9 +85,9 @@
             this.label1.Font = new System.Drawing.Font("Segoe Script", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(77, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(420, 53);
+            this.label1.Size = new System.Drawing.Size(396, 53);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Doctor Register Pannel";
+            this.label1.Text = "Doctor Register Panel";
             // 
             // FrmDoctorRegister
             // 
@@ -102,7 +102,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmDoctorRegister";
             this.Text = "FrmDoctorRegister";
             this.ResumeLayout(false);

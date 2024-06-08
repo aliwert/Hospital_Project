@@ -100,6 +100,12 @@
     <Compile Include="FrmPatientRegister.Designer.cs">
       <DependentUpon>FrmPatientRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmSecretaryDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSecretaryDetail.Designer.cs">
+      <DependentUpon>FrmSecretaryDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmSecretaryRegister.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPatientRegister.resx">
       <DependentUpon>FrmPatientRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSecretaryDetail.resx">
+      <DependentUpon>FrmSecretaryDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSecretaryRegister.resx">
       <DependentUpon>FrmSecretaryRegister.cs</DependentUpon>
