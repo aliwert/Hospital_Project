@@ -81,6 +81,7 @@
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.Size = new System.Drawing.Size(147, 31);
             this.TxtPassword.TabIndex = 4;
+            this.TxtPassword.UseSystemPasswordChar = true;
             // 
             // LnkSignUp
             // 
@@ -101,6 +102,7 @@
             this.BtnRegister.TabIndex = 6;
             this.BtnRegister.Text = "Sign In";
             this.BtnRegister.UseVisualStyleBackColor = true;
+            this.BtnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
             // 
             // FrmPatientRegister
             // 
