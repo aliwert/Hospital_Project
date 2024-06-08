@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPatientSignUp));
             this.TxtPassword = new System.Windows.Forms.TextBox();
             this.MskTC = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,7 +49,7 @@
             this.TxtPassword.Location = new System.Drawing.Point(301, 224);
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.Size = new System.Drawing.Size(147, 31);
-            this.TxtPassword.TabIndex = 8;
+            this.TxtPassword.TabIndex = 5;
             // 
             // MskTC
             // 
@@ -56,7 +57,7 @@
             this.MskTC.Mask = "00000000000";
             this.MskTC.Name = "MskTC";
             this.MskTC.Size = new System.Drawing.Size(147, 31);
-            this.MskTC.TabIndex = 7;
+            this.MskTC.TabIndex = 3;
             this.MskTC.ValidatingType = typeof(int);
             // 
             // label3
@@ -82,7 +83,7 @@
             this.TxtSurname.Location = new System.Drawing.Point(301, 61);
             this.TxtSurname.Name = "TxtSurname";
             this.TxtSurname.Size = new System.Drawing.Size(147, 31);
-            this.TxtSurname.TabIndex = 10;
+            this.TxtSurname.TabIndex = 2;
             // 
             // label1
             // 
@@ -98,7 +99,7 @@
             this.TxtName.Location = new System.Drawing.Point(301, 11);
             this.TxtName.Name = "TxtName";
             this.TxtName.Size = new System.Drawing.Size(147, 31);
-            this.TxtName.TabIndex = 12;
+            this.TxtName.TabIndex = 1;
             // 
             // label4
             // 
@@ -124,7 +125,7 @@
             this.MskPhone.Mask = "(999) 000-0000";
             this.MskPhone.Name = "MskPhone";
             this.MskPhone.Size = new System.Drawing.Size(147, 31);
-            this.MskPhone.TabIndex = 15;
+            this.MskPhone.TabIndex = 4;
             // 
             // CmbGender
             // 
@@ -135,7 +136,7 @@
             this.CmbGender.Location = new System.Drawing.Point(301, 273);
             this.CmbGender.Name = "CmbGender";
             this.CmbGender.Size = new System.Drawing.Size(147, 31);
-            this.CmbGender.TabIndex = 16;
+            this.CmbGender.TabIndex = 6;
             // 
             // label6
             // 
@@ -158,8 +159,10 @@
             // 
             // FrmPatientSignUp
             // 
+            this.AcceptButton = this.BtnSignup;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(799, 423);
             this.Controls.Add(this.BtnSignup);
@@ -176,9 +179,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
             this.Name = "FrmPatientSignUp";
-            this.Text = "FrmPatientSignUp";
+            this.Text = "Patient Register";
             this.ResumeLayout(false);
             this.PerformLayout();
 

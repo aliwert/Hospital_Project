@@ -16,5 +16,12 @@ namespace Hospital_Project
         {
             InitializeComponent();
         }
+
+        private void LnkSignUp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FrmPatientSignUp fr = new FrmPatientSignUp();
+            fr.Show();
+            
+        }
     }
 }
