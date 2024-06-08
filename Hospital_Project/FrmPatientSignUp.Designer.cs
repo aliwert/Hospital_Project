@@ -156,6 +156,7 @@
             this.BtnSignup.TabIndex = 18;
             this.BtnSignup.Text = "Sign  Up";
             this.BtnSignup.UseVisualStyleBackColor = false;
+            this.BtnSignup.Click += new System.EventHandler(this.BtnSignup_Click);
             // 
             // FrmPatientSignUp
             // 
