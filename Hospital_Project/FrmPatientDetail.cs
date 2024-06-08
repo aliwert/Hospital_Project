@@ -77,6 +77,7 @@ namespace Hospital_Project
         private void LnkChangeInformation_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             FrmChangeInformation fr = new FrmChangeInformation();
+            fr.TCno = LblTC.Text;
             fr.Show();
         }
     }

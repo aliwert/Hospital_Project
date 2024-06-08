@@ -16,5 +16,11 @@ namespace Hospital_Project
         {
             InitializeComponent();
         }
+        public string TCno;
+        private void FrmChangeInformation_Load(object sender, EventArgs e)
+        {
+            MskTC.Text = TCno;
+
+        }
     }
 }

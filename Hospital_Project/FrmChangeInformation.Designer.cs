@@ -71,7 +71,7 @@
             this.CmbGender.Location = new System.Drawing.Point(254, 311);
             this.CmbGender.Name = "CmbGender";
             this.CmbGender.Size = new System.Drawing.Size(147, 31);
-            this.CmbGender.TabIndex = 29;
+            this.CmbGender.TabIndex = 6;
             // 
             // MskPhone
             // 
@@ -79,7 +79,7 @@
             this.MskPhone.Mask = "(999) 000-0000";
             this.MskPhone.Name = "MskPhone";
             this.MskPhone.Size = new System.Drawing.Size(147, 31);
-            this.MskPhone.TabIndex = 28;
+            this.MskPhone.TabIndex = 4;
             // 
             // label5
             // 
@@ -95,7 +95,7 @@
             this.TxtName.Location = new System.Drawing.Point(254, 49);
             this.TxtName.Name = "TxtName";
             this.TxtName.Size = new System.Drawing.Size(147, 31);
-            this.TxtName.TabIndex = 26;
+            this.TxtName.TabIndex = 1;
             // 
             // label4
             // 
@@ -111,7 +111,7 @@
             this.TxtSurname.Location = new System.Drawing.Point(254, 99);
             this.TxtSurname.Name = "TxtSurname";
             this.TxtSurname.Size = new System.Drawing.Size(147, 31);
-            this.TxtSurname.TabIndex = 24;
+            this.TxtSurname.TabIndex = 2;
             // 
             // label1
             // 
@@ -127,7 +127,7 @@
             this.TxtPassword.Location = new System.Drawing.Point(254, 262);
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.Size = new System.Drawing.Size(147, 31);
-            this.TxtPassword.TabIndex = 22;
+            this.TxtPassword.TabIndex = 5;
             // 
             // MskTC
             // 
@@ -135,7 +135,7 @@
             this.MskTC.Mask = "00000000000";
             this.MskTC.Name = "MskTC";
             this.MskTC.Size = new System.Drawing.Size(147, 31);
-            this.MskTC.TabIndex = 21;
+            this.MskTC.TabIndex = 3;
             this.MskTC.ValidatingType = typeof(int);
             // 
             // label3
@@ -158,6 +158,7 @@
             // 
             // FrmChangeInformation
             // 
+            this.AcceptButton = this.BtnUpdateInformation;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
@@ -176,9 +177,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmChangeInformation";
             this.Text = "FrmChangeInformation";
+            this.Load += new System.EventHandler(this.FrmChangeInformation_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
