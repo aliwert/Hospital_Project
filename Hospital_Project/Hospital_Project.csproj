@@ -118,6 +118,12 @@
     <Compile Include="FrmSecretaryRegister.Designer.cs">
       <DependentUpon>FrmSecretaryRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSubject.Designer.cs">
+      <DependentUpon>FrmSubject.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmAnnouncements.resx">
@@ -155,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSecretaryRegister.resx">
       <DependentUpon>FrmSecretaryRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSubject.resx">
+      <DependentUpon>FrmSubject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
