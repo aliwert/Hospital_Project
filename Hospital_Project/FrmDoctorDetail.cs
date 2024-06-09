@@ -24,6 +24,22 @@ namespace Hospital_Project
             LblTC.Text = TC;
 
             // doctor name surname
+
+            SqlCommand cmd = new SqlCommand("select doctorname, doctorsurname from Tbl_Doctors where doctorssn=@p1", bgl.baglanti());
+            cmd.Parameters.AddWithValue("@p1", LblTC.Text);
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                LblNameSurname.Text = dr[0] + " " + dr[1];
+            }
+            bgl.baglanti().Close();
+
+
+            //appointmens
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Appointments where AppointmentDoctor='" + LblNameSurname.Text + "'", bgl.baglanti());
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
         }
     }
 }

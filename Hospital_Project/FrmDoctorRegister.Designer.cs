@@ -53,6 +53,7 @@
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.Size = new System.Drawing.Size(147, 31);
             this.TxtPassword.TabIndex = 11;
+            this.TxtPassword.Text = "4444";
             this.TxtPassword.UseSystemPasswordChar = true;
             // 
             // MskTC
@@ -62,6 +63,7 @@
             this.MskTC.Name = "MskTC";
             this.MskTC.Size = new System.Drawing.Size(147, 31);
             this.MskTC.TabIndex = 10;
+            this.MskTC.Text = "44444444444";
             this.MskTC.ValidatingType = typeof(int);
             // 
             // label3
