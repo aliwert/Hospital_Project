@@ -101,5 +101,11 @@ namespace Hospital_Project
             FrmDoctorPanel dct = new FrmDoctorPanel();
             dct.Show();
         }
+
+        private void BtnSubjectPanel_Click(object sender, EventArgs e)
+        {
+            FrmSubject frb = new FrmSubject();
+            frb.Show();
+        }
     }
 }

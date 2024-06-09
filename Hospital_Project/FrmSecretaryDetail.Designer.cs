@@ -400,6 +400,7 @@
             this.BtnSubjectPanel.TabIndex = 20;
             this.BtnSubjectPanel.Text = "Subject Panel";
             this.BtnSubjectPanel.UseVisualStyleBackColor = true;
+            this.BtnSubjectPanel.Click += new System.EventHandler(this.BtnSubjectPanel_Click);
             // 
             // BtnDoctorPanel
             // 
