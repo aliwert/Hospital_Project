@@ -73,6 +73,7 @@
             this.MskTC.Name = "MskTC";
             this.MskTC.Size = new System.Drawing.Size(147, 31);
             this.MskTC.TabIndex = 3;
+            this.MskTC.Text = "11111111111";
             this.MskTC.ValidatingType = typeof(int);
             // 
             // TxtPassword
@@ -81,6 +82,7 @@
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.Size = new System.Drawing.Size(147, 31);
             this.TxtPassword.TabIndex = 4;
+            this.TxtPassword.Text = "1111";
             this.TxtPassword.UseSystemPasswordChar = true;
             // 
             // LnkSignUp

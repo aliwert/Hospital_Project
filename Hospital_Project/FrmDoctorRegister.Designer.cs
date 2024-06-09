@@ -53,7 +53,7 @@
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.Size = new System.Drawing.Size(147, 31);
             this.TxtPassword.TabIndex = 11;
-            this.TxtPassword.Text = "4444";
+            this.TxtPassword.Text = "44444";
             this.TxtPassword.UseSystemPasswordChar = true;
             // 
             // MskTC
