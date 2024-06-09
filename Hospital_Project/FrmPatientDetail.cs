@@ -36,8 +36,8 @@ namespace Hospital_Project
 
             // appointment history
             DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Appointments where PatientSSN=" + LblTC.Text, bgl.baglanti());
-           
+            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Appointments where TRY_CAST(PatientSSN as numeric)" + LblTC.Text, bgl.baglanti());
+            //da.Fill(dt);
             dataGridView2.DataSource = dt;
 
             // subject
@@ -69,7 +69,7 @@ namespace Hospital_Project
         private void CmbDoctor_SelectedIndexChanged(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Appointments where AppointmentSubject='" + CmbSubject.Text + "'", bgl.baglanti());
+            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Appointments where AppointmentSubject='" + CmbSubject.Text + "'" + "and AppointmentDoctor='" + CmbDoctor.Text + "' and AppointmentStatus=0", bgl.baglanti());
             da.Fill(dt);
             dataGridView1.DataSource = dt;
         }
@@ -79,6 +79,33 @@ namespace Hospital_Project
             FrmChangeInformation fr = new FrmChangeInformation();
             fr.TCno = LblTC.Text;
             fr.Show();
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int secilen = dataGridView2.SelectedCells[0].RowIndex;
+            TxtId.Text = dataGridView2.Rows[secilen].Cells[0].Value.ToString();
+        }
+
+        private void BtnAppointment_Click(object sender, EventArgs e)
+        {
+            SqlCommand cmd = new SqlCommand("Update Tbl_Appointments set AppointmentStatus=1, PatientSSN=@p1, PatientComplaint=@p2 where appointmentid=@p3 ", bgl.baglanti());
+            cmd.Parameters.AddWithValue("@p1", LblTC.Text);
+            cmd.Parameters.AddWithValue("@p2", RchPresenting.Text);
+            cmd.Parameters.AddWithValue("@p3", TxtId.Text);
+            cmd.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Appointment has been booked", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

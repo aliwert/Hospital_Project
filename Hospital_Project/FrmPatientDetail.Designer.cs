@@ -128,6 +128,7 @@
             // 
             // TxtId
             // 
+            this.TxtId.Enabled = false;
             this.TxtId.Location = new System.Drawing.Point(185, 19);
             this.TxtId.Name = "TxtId";
             this.TxtId.Size = new System.Drawing.Size(173, 31);
@@ -161,6 +162,7 @@
             this.BtnAppointment.TabIndex = 3;
             this.BtnAppointment.Text = "Make Appointment ";
             this.BtnAppointment.UseVisualStyleBackColor = true;
+            this.BtnAppointment.Click += new System.EventHandler(this.BtnAppointment_Click);
             // 
             // label7
             // 
@@ -235,6 +237,7 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(844, 226);
             this.dataGridView2.TabIndex = 0;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // groupBox4
             // 
@@ -254,11 +257,14 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(844, 259);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // FrmPatientDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(1385, 608);
             this.Controls.Add(this.groupBox4);
@@ -268,6 +274,7 @@
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
             this.Name = "FrmPatientDetail";
             this.Text = "PatientDetail";
             this.Load += new System.EventHandler(this.FrmPatientDetail_Load);

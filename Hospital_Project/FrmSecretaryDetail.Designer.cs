@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSecretaryDetail));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.LblNameSurname = new System.Windows.Forms.Label();
             this.LblTC = new System.Windows.Forms.Label();
@@ -38,7 +39,6 @@
             this.BtnAnnouncementsCreate = new System.Windows.Forms.Button();
             this.RchAnnouncements = new System.Windows.Forms.RichTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.BtnUpdate = new System.Windows.Forms.Button();
             this.BtnSave = new System.Windows.Forms.Button();
             this.ChkStatus = new System.Windows.Forms.CheckBox();
             this.MskTC = new System.Windows.Forms.MaskedTextBox();
@@ -63,6 +63,7 @@
             this.BtnList = new System.Windows.Forms.Button();
             this.BtnSubjectPanel = new System.Windows.Forms.Button();
             this.BtnDoctorPanel = new System.Windows.Forms.Button();
+            this.BtnAnnouncements = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -155,7 +156,6 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.BtnUpdate);
             this.groupBox3.Controls.Add(this.BtnSave);
             this.groupBox3.Controls.Add(this.ChkStatus);
             this.groupBox3.Controls.Add(this.MskTC);
@@ -177,20 +177,11 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Appointment Panel";
             // 
-            // BtnUpdate
-            // 
-            this.BtnUpdate.Location = new System.Drawing.Point(116, 422);
-            this.BtnUpdate.Name = "BtnUpdate";
-            this.BtnUpdate.Size = new System.Drawing.Size(159, 35);
-            this.BtnUpdate.TabIndex = 18;
-            this.BtnUpdate.Text = "Update";
-            this.BtnUpdate.UseVisualStyleBackColor = true;
-            // 
             // BtnSave
             // 
-            this.BtnSave.Location = new System.Drawing.Point(116, 381);
+            this.BtnSave.Location = new System.Drawing.Point(37, 400);
             this.BtnSave.Name = "BtnSave";
-            this.BtnSave.Size = new System.Drawing.Size(159, 35);
+            this.BtnSave.Size = new System.Drawing.Size(238, 35);
             this.BtnSave.TabIndex = 2;
             this.BtnSave.Text = "Save";
             this.BtnSave.UseVisualStyleBackColor = true;
@@ -373,6 +364,7 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.BtnAnnouncements);
             this.groupBox6.Controls.Add(this.BtnList);
             this.groupBox6.Controls.Add(this.BtnSubjectPanel);
             this.groupBox6.Controls.Add(this.BtnDoctorPanel);
@@ -385,7 +377,7 @@
             // 
             // BtnList
             // 
-            this.BtnList.Location = new System.Drawing.Point(481, 30);
+            this.BtnList.Location = new System.Drawing.Point(428, 43);
             this.BtnList.Name = "BtnList";
             this.BtnList.Size = new System.Drawing.Size(159, 35);
             this.BtnList.TabIndex = 21;
@@ -395,7 +387,7 @@
             // 
             // BtnSubjectPanel
             // 
-            this.BtnSubjectPanel.Location = new System.Drawing.Point(315, 30);
+            this.BtnSubjectPanel.Location = new System.Drawing.Point(222, 43);
             this.BtnSubjectPanel.Name = "BtnSubjectPanel";
             this.BtnSubjectPanel.Size = new System.Drawing.Size(159, 35);
             this.BtnSubjectPanel.TabIndex = 20;
@@ -405,13 +397,23 @@
             // 
             // BtnDoctorPanel
             // 
-            this.BtnDoctorPanel.Location = new System.Drawing.Point(150, 30);
+            this.BtnDoctorPanel.Location = new System.Drawing.Point(17, 43);
             this.BtnDoctorPanel.Name = "BtnDoctorPanel";
             this.BtnDoctorPanel.Size = new System.Drawing.Size(159, 35);
             this.BtnDoctorPanel.TabIndex = 19;
             this.BtnDoctorPanel.Text = "Doctor Panel";
             this.BtnDoctorPanel.UseVisualStyleBackColor = true;
             this.BtnDoctorPanel.Click += new System.EventHandler(this.BtnDoctorPanel_Click);
+            // 
+            // BtnAnnouncements
+            // 
+            this.BtnAnnouncements.Location = new System.Drawing.Point(624, 43);
+            this.BtnAnnouncements.Name = "BtnAnnouncements";
+            this.BtnAnnouncements.Size = new System.Drawing.Size(159, 35);
+            this.BtnAnnouncements.TabIndex = 22;
+            this.BtnAnnouncements.Text = "Announcements";
+            this.BtnAnnouncements.UseVisualStyleBackColor = true;
+            this.BtnAnnouncements.Click += new System.EventHandler(this.BtnAnnouncements_Click);
             // 
             // FrmSecretaryDetail
             // 
@@ -426,9 +428,10 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmSecretaryDetail";
-            this.Text = "FrmSecretaryDetail";
+            this.Text = "Secretary Detail";
             this.Load += new System.EventHandler(this.FrmSecretaryDetail_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -471,7 +474,6 @@
         private System.Windows.Forms.ComboBox CmbDoctor;
         private System.Windows.Forms.ComboBox CmbSubject;
         private System.Windows.Forms.MaskedTextBox MskClock;
-        private System.Windows.Forms.Button BtnUpdate;
         private System.Windows.Forms.Button BtnSave;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -483,5 +485,6 @@
         private System.Windows.Forms.Button BtnList;
         private System.Windows.Forms.Button BtnSubjectPanel;
         private System.Windows.Forms.Button BtnDoctorPanel;
+        private System.Windows.Forms.Button BtnAnnouncements;
     }
 }
