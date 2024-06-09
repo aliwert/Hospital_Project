@@ -86,5 +86,20 @@ namespace Hospital_Project
             }
             bgl.baglanti().Close();
         }
+
+        private void BtnAnnouncementsCreate_Click(object sender, EventArgs e)
+        {
+            SqlCommand kmt = new SqlCommand("insert into Tbl_Announcements (announcement) values (@d1)", bgl.baglanti());
+            kmt.Parameters.AddWithValue("@d1", RchAnnouncements.Text);
+            kmt.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Announcement has been created.");
+        }
+
+        private void BtnDoctorPanel_Click(object sender, EventArgs e)
+        {
+            FrmDoctorPanel dct = new FrmDoctorPanel();
+            dct.Show();
+        }
     }
 }

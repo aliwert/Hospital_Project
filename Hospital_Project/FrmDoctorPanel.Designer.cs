@@ -59,14 +59,14 @@
             this.TxtName.Location = new System.Drawing.Point(136, 40);
             this.TxtName.Name = "TxtName";
             this.TxtName.Size = new System.Drawing.Size(159, 31);
-            this.TxtName.TabIndex = 12;
+            this.TxtName.TabIndex = 1;
             // 
             // TxtSurname
             // 
             this.TxtSurname.Location = new System.Drawing.Point(136, 104);
             this.TxtSurname.Name = "TxtSurname";
             this.TxtSurname.Size = new System.Drawing.Size(159, 31);
-            this.TxtSurname.TabIndex = 14;
+            this.TxtSurname.TabIndex = 2;
             // 
             // label2
             // 
@@ -110,7 +110,7 @@
             this.MskTC.Mask = "00000000000";
             this.MskTC.Name = "MskTC";
             this.MskTC.Size = new System.Drawing.Size(159, 31);
-            this.MskTC.TabIndex = 18;
+            this.MskTC.TabIndex = 4;
             this.MskTC.ValidatingType = typeof(int);
             // 
             // CmbSubject
@@ -119,14 +119,14 @@
             this.CmbSubject.Location = new System.Drawing.Point(136, 171);
             this.CmbSubject.Name = "CmbSubject";
             this.CmbSubject.Size = new System.Drawing.Size(159, 31);
-            this.CmbSubject.TabIndex = 19;
+            this.CmbSubject.TabIndex = 3;
             // 
             // TxtPassword
             // 
             this.TxtPassword.Location = new System.Drawing.Point(136, 287);
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.Size = new System.Drawing.Size(159, 31);
-            this.TxtPassword.TabIndex = 20;
+            this.TxtPassword.TabIndex = 5;
             // 
             // dataGridView1
             // 
@@ -135,6 +135,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(404, 358);
             this.dataGridView1.TabIndex = 21;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // BtnAdd
             // 
@@ -145,6 +146,7 @@
             this.BtnAdd.TabIndex = 22;
             this.BtnAdd.Text = "Add";
             this.BtnAdd.UseVisualStyleBackColor = false;
+            this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // BtnDelete
             // 
@@ -168,6 +170,7 @@
             // 
             // FrmDoctorPanel
             // 
+            this.AcceptButton = this.BtnAdd;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(752, 403);
@@ -186,9 +189,10 @@
             this.Controls.Add(this.TxtName);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmDoctorPanel";
             this.Text = "FrmDoctorPanel";
+            this.Load += new System.EventHandler(this.FrmDoctorPanel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

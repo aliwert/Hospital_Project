@@ -143,6 +143,7 @@
             this.BtnAnnouncementsCreate.TabIndex = 1;
             this.BtnAnnouncementsCreate.Text = "Create";
             this.BtnAnnouncementsCreate.UseVisualStyleBackColor = true;
+            this.BtnAnnouncementsCreate.Click += new System.EventHandler(this.BtnAnnouncementsCreate_Click);
             // 
             // RchAnnouncements
             // 
@@ -408,13 +409,14 @@
             this.BtnDoctorPanel.TabIndex = 19;
             this.BtnDoctorPanel.Text = "Doctor Panel";
             this.BtnDoctorPanel.UseVisualStyleBackColor = true;
+            this.BtnDoctorPanel.Click += new System.EventHandler(this.BtnDoctorPanel_Click);
             // 
             // FrmSecretaryDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
-            this.ClientSize = new System.Drawing.Size(1409, 787);
+            this.ClientSize = new System.Drawing.Size(1413, 793);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
