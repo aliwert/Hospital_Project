@@ -41,5 +41,14 @@ namespace Hospital_Project
             TxtId.Text = dataGridView1.Rows[secilen].Cells[0].Value.ToString();
             TxtSubject.Text = dataGridView1.Rows[secilen].Cells[1].Value.ToString();
         }
+
+        private void BtnDelete_Click(object sender, EventArgs e)
+        {
+            SqlCommand cmd = new SqlCommand("delete from Tbl_Subjects where Subjectid=@b1", bgl.baglanti());
+            cmd.Parameters.AddWithValue("@b1", TxtId.Text);
+            cmd.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Subject has been deleted");
+        }
     }
 }
