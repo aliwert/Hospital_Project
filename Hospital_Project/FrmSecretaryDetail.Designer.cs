@@ -391,6 +391,7 @@
             this.BtnList.TabIndex = 21;
             this.BtnList.Text = "Appointment List";
             this.BtnList.UseVisualStyleBackColor = true;
+            this.BtnList.Click += new System.EventHandler(this.BtnList_Click);
             // 
             // BtnSubjectPanel
             // 

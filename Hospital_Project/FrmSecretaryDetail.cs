@@ -107,5 +107,11 @@ namespace Hospital_Project
             FrmSubject frb = new FrmSubject();
             frb.Show();
         }
+
+        private void BtnList_Click(object sender, EventArgs e)
+        {
+            FrmAppointmentList apl = new FrmAppointmentList();
+            apl.Show();
+        }
     }
 }

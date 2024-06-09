@@ -50,5 +50,15 @@ namespace Hospital_Project
             bgl.baglanti().Close();
             MessageBox.Show("Subject has been deleted");
         }
+
+        private void BtnUpdate_Click(object sender, EventArgs e)
+        {
+            SqlCommand cmd = new SqlCommand("update tbl_subjects set subjectname=@p1 where subjectid=@p2", bgl.baglanti());
+            cmd.Parameters.AddWithValue("@p1", TxtSubject.Text);
+            cmd.Parameters.AddWithValue("@p2", TxtId.Text);
+            cmd.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Subject has been updated");
+        }
     }
 }
