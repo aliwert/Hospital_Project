@@ -421,6 +421,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmSecretaryDetail";
             this.Text = "FrmSecretaryDetail";
+            this.Load += new System.EventHandler(this.FrmSecretaryDetail_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

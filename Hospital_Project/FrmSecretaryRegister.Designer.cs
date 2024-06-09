@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSecretaryRegister));
             this.BtnRegister = new System.Windows.Forms.Button();
             this.TxtPassword = new System.Windows.Forms.TextBox();
             this.MskTC = new System.Windows.Forms.MaskedTextBox();
@@ -44,13 +45,16 @@
             this.BtnRegister.TabIndex = 13;
             this.BtnRegister.Text = "Sign In";
             this.BtnRegister.UseVisualStyleBackColor = true;
+            this.BtnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
             // 
             // TxtPassword
             // 
             this.TxtPassword.Location = new System.Drawing.Point(184, 217);
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.Size = new System.Drawing.Size(147, 31);
-            this.TxtPassword.TabIndex = 11;
+            this.TxtPassword.TabIndex = 2;
+            this.TxtPassword.Text = "3333";
+            this.TxtPassword.UseSystemPasswordChar = true;
             // 
             // MskTC
             // 
@@ -58,7 +62,8 @@
             this.MskTC.Mask = "00000000000";
             this.MskTC.Name = "MskTC";
             this.MskTC.Size = new System.Drawing.Size(147, 31);
-            this.MskTC.TabIndex = 10;
+            this.MskTC.TabIndex = 1;
+            this.MskTC.Text = "33333333333";
             this.MskTC.ValidatingType = typeof(int);
             // 
             // label3
@@ -91,8 +96,10 @@
             // 
             // FrmSecretaryRegister
             // 
+            this.AcceptButton = this.BtnRegister;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(709, 463);
             this.Controls.Add(this.BtnRegister);
@@ -102,7 +109,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
             this.Name = "FrmSecretaryRegister";
             this.Text = "FrmSecretary";
             this.ResumeLayout(false);

@@ -16,5 +16,10 @@ namespace Hospital_Project
         {
             InitializeComponent();
         }
+        public string TCnu;
+        private void FrmSecretaryDetail_Load(object sender, EventArgs e)
+        {
+            LblTC.Text = TCnu;
+        }
     }
 }
