@@ -45,6 +45,7 @@
             this.BtnRegister.TabIndex = 13;
             this.BtnRegister.Text = "Sign In";
             this.BtnRegister.UseVisualStyleBackColor = true;
+            this.BtnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
             // 
             // TxtPassword
             // 
@@ -52,6 +53,7 @@
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.Size = new System.Drawing.Size(147, 31);
             this.TxtPassword.TabIndex = 11;
+            this.TxtPassword.UseSystemPasswordChar = true;
             // 
             // MskTC
             // 
@@ -108,7 +110,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.Name = "FrmDoctorRegister";
-            this.Text = "FrmDoctorRegister";
+            this.Text = "Doctor Register";
             this.ResumeLayout(false);
             this.PerformLayout();
 

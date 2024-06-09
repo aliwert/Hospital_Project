@@ -188,6 +188,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmDoctorDetail";
             this.Text = "FrmDoctorDetail";
+            this.Load += new System.EventHandler(this.FrmDoctorDetail_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
