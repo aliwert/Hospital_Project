@@ -61,5 +61,16 @@ namespace Hospital_Project
             rg.Show();
             this.Hide();
         }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int secilen = dataGridView1.SelectedCells[0].RowIndex;
+
+
+            RchPresenting.Text = dataGridView1.Rows[secilen].Cells[7].Value.ToString();
+
+
+
+        }
     }
 }
