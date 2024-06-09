@@ -41,5 +41,12 @@ namespace Hospital_Project
             da.Fill(dt);
             dataGridView1.DataSource = dt;
         }
+
+        private void BtnUpdate_Click(object sender, EventArgs e)
+        {
+            FrmDoctorInformationChange ifc = new FrmDoctorInformationChange();
+            ifc.TCno = LblTC.Text;
+            ifc.Show();
+        }
     }
 }

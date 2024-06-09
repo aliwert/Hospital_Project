@@ -173,6 +173,7 @@
             this.BtnUpdate.TabIndex = 7;
             this.BtnUpdate.Text = "Change Information";
             this.BtnUpdate.UseVisualStyleBackColor = true;
+            this.BtnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
             // 
             // FrmDoctorDetail
             // 

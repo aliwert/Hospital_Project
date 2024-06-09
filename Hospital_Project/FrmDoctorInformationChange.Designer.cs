@@ -133,6 +133,7 @@
             this.BtnUpdateInformation.TabIndex = 36;
             this.BtnUpdateInformation.Text = "Update";
             this.BtnUpdateInformation.UseVisualStyleBackColor = false;
+            this.BtnUpdateInformation.Click += new System.EventHandler(this.BtnUpdateInformation_Click);
             // 
             // FrmDoctorInformationChange
             // 
@@ -155,6 +156,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmDoctorInformationChange";
             this.Text = "FrmDoctorInformationChange";
+            this.Load += new System.EventHandler(this.FrmDoctorInformationChange_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
