@@ -36,6 +36,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.TxtId = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.LnkChangeInformation = new System.Windows.Forms.LinkLabel();
             this.BtnAppointment = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
@@ -48,8 +50,6 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.TxtId = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -125,6 +125,22 @@
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Appointment";
+            // 
+            // TxtId
+            // 
+            this.TxtId.Location = new System.Drawing.Point(185, 19);
+            this.TxtId.Name = "TxtId";
+            this.TxtId.Size = new System.Drawing.Size(173, 31);
+            this.TxtId.TabIndex = 7;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(106, 27);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(25, 23);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Id";
             // 
             // LnkChangeInformation
             // 
@@ -211,6 +227,8 @@
             // 
             // dataGridView2
             // 
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.Location = new System.Drawing.Point(3, 27);
@@ -236,22 +254,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(844, 259);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(106, 27);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(25, 23);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Id";
-            // 
-            // TxtId
-            // 
-            this.TxtId.Location = new System.Drawing.Point(185, 19);
-            this.TxtId.Name = "TxtId";
-            this.TxtId.Size = new System.Drawing.Size(173, 31);
-            this.TxtId.TabIndex = 7;
             // 
             // FrmPatientDetail
             // 

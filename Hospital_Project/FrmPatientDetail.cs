@@ -36,8 +36,8 @@ namespace Hospital_Project
 
             // appointment history
             DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Appointments where PatientSSN= " + tc, bgl.baglanti());
-            da.Fill(dt);
+            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Appointments where PatientSSN=" + LblTC.Text, bgl.baglanti());
+           
             dataGridView2.DataSource = dt;
 
             // subject
