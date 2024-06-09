@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDoctorInformationChange));
             this.TxtPassword = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -137,8 +138,10 @@
             // 
             // FrmDoctorInformationChange
             // 
+            this.AcceptButton = this.BtnUpdateInformation;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(559, 442);
             this.Controls.Add(this.BtnUpdateInformation);
@@ -153,9 +156,11 @@
             this.Controls.Add(this.TxtPassword);
             this.Controls.Add(this.label3);
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
             this.Name = "FrmDoctorInformationChange";
-            this.Text = "FrmDoctorInformationChange";
+            this.Text = "Doctor Information Update";
             this.Load += new System.EventHandler(this.FrmDoctorInformationChange_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

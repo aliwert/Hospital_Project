@@ -48,5 +48,18 @@ namespace Hospital_Project
             ifc.TCno = LblTC.Text;
             ifc.Show();
         }
+
+        private void BtnAnnouncements_Click(object sender, EventArgs e)
+        {
+            FrmAnnouncements an = new FrmAnnouncements();
+            an.Show();
+        }
+
+        private void BtnQuit_Click(object sender, EventArgs e)
+        {
+            FrmRegisters rg = new FrmRegisters();
+            rg.Show();
+            this.Hide();
+        }
     }
 }

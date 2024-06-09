@@ -155,6 +155,7 @@
             this.BtnQuit.TabIndex = 9;
             this.BtnQuit.Text = "Quit";
             this.BtnQuit.UseVisualStyleBackColor = true;
+            this.BtnQuit.Click += new System.EventHandler(this.BtnQuit_Click);
             // 
             // BtnAnnouncements
             // 
@@ -164,6 +165,7 @@
             this.BtnAnnouncements.TabIndex = 8;
             this.BtnAnnouncements.Text = "Announcements";
             this.BtnAnnouncements.UseVisualStyleBackColor = true;
+            this.BtnAnnouncements.Click += new System.EventHandler(this.BtnAnnouncements_Click);
             // 
             // BtnUpdate
             // 
